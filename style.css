@@ -1,0 +1,115 @@
+/********** Base styles **********/	
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+h1 {
+    padding-top: 10%;
+    padding-bottom: 8%;
+	margin: 15px;
+	text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.box {
+	border: 1px solid black;
+	background-color:gray;
+	margin: 5px 10px 15px 10px;
+}
+
+.box-heading {
+	float: right;
+	position: relative;
+	right: -1px;
+	top: -1px;
+	min-width: 130px;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	padding: 5px;
+	color: black;
+	font-size: 125%;
+}
+
+.box-heading-1 {
+	background-color: #d34497;
+}
+
+.box-heading-2 {
+	background-color: #be0f2c;
+}
+
+.box-heading-3 {
+	background-color: #eeec87;
+}
+
+.box-content {
+	clear: right;
+	height: 100px;
+	text-align: justify;
+	width: 95%;	
+	padding-right: 5%;	
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	color: white;
+	overflow: auto;
+}
+
+.p {
+	border: 1px solid black;
+	background-color: #A52A2A;
+	font-family: Helvetica;
+}
+
+.row {
+	width: 100%;
+}
+
+
+/*** Desktop [992,...) ***/
+@media (min-width: 992px) {
+	.col-d-1, .col-d-2, .col-d-3 {
+		float: left;
+		/*border: 1px solid green;*/
+	}
+	.col-d-1 {
+		width: 33.33%;
+	}
+	.col-d-2 {
+		width: 66.66%;
+	}
+	.col-d-3 {
+		width: 100%;
+	}
+}
+
+/*** Tablet [768,...,991] ***/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-t-1, .col-t-2 {
+		float: left;
+		/*border: 1px solid green;*/
+	}
+	.col-t-1 {
+		width: 50%;
+	}
+	.col-t-2 {
+		width: 100%;
+	}
+}
+
+/*** Mobile (...,767] ***/
+@media (max-width: 767px) {
+	.col-m-1 {
+		float: left;
+		/*border: 1px solid green;*/
+		width: 100%;
+	}
+}
